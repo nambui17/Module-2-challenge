@@ -1,0 +1,96 @@
+:root {
+    --backdrop: #EDE8E8;
+    --text-color: #282B28;
+    --header-text: #A24936;
+    --header-color: #994636;
+    --Card-color: #D36135;
+    --footer-color: #EDB183;
+    --navlink-color: #EDB183;
+    --bar-color: #231123;
+    --footer-text: #5A2328;
+}
+
+* {
+    font-family: 'PlayfairDisplay';
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--backdrop);
+}
+
+header {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: var(--header-color);
+    border-bottom: 5px solid var(--bar-color);
+}
+
+header h1 {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 300%;
+    color: var(--text-color)
+}
+
+nav ul {
+    display:flex;
+    justify-content: space-between;
+    min-width: 300px;
+    font-size: 150%;
+}
+
+nav a {
+    color: var(--navlink-color);
+    font-weight: 500;
+    text-decoration: none;
+    padding:30px;
+}
+
+nav a:hover {
+    color: #edb1835e;
+}
+
+#subheader {
+    height: 600px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/");
+    background-size:cover;
+    background-position: center;
+}
+
+p {
+    font-size: 16px;
+}
+
+footer {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 5px solid var(--bar-color);
+    background-color: var(--footer-color);
+}
+
+footer li {
+    list-style: none;
+    font-size: 20px;
+    color: var(--footer-text);
+}
+
+footer li:first-child {
+    list-style: none;
+    font-size: 30px;
+    color: var(--footer-text);
+}
+
+@media screen and (max-width:920px) {
+    main {
+        flex-direction: column;
+    }
+}
