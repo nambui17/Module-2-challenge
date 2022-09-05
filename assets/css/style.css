@@ -1,11 +1,11 @@
 :root {
     --backdrop: #EDE8E8;
-    --text-color: #282B28;
-    --header-text: #A24936;
     --header-color: #994636;
-    --Card-color: #D36135;
-    --footer-color: #EDB183;
+    --text-color: #282B28;
+    --header-text: #011936;
     --navlink-color: #EDB183;
+    --text-link-color: #1A936F;
+    --footer-color: #EDB183;
     --bar-color: #231123;
     --footer-text: #5A2328;
 }
@@ -19,6 +19,10 @@
 
 body {
     background-color: var(--backdrop);
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+    font-size: 16px;
 }
 
 header {
@@ -30,18 +34,21 @@ header {
     border-bottom: 5px solid var(--bar-color);
 }
 
-header h1 {
-    display: flex;
-    justify-content: flex-start;
-    font-size: 300%;
-    color: var(--text-color)
+h1 {
+    margin: 1%;
+    font-size: 400%;
+    color: var(--header-text);
+}
+
+h3 {
+    font-size: 150%;
 }
 
 nav ul {
     display:flex;
     justify-content: space-between;
     min-width: 300px;
-    font-size: 150%;
+    font-size: 200%;
 }
 
 nav a {
@@ -56,16 +63,74 @@ nav a:hover {
 }
 
 #subheader {
-    height: 600px;
+    display: flex;
+    height: 400px;
     width: 100%;
-    margin-bottom: 25px;
-    background-image: url("../images/");
+    background-image: url("../images/Microstructures.jpg");
+    /*Image under creative commons license*/
     background-size:cover;
     background-position: center;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 400%;
+    font-weight: 900;
+    padding-right: 60px;
+    color: #82a3a1;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: var(--bar-color);
 }
 
-p {
-    font-size: 16px;
+.attribution {
+    display:flex;
+    font-size: 10px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    justify-content: flex-end;
+}
+
+.attribution a {
+    text-decoration:none;
+    color: var(--navlink-color);
+    padding-left: 5px;
+    margin-bottom: 0px;
+}
+
+.attribution a:hover {
+    color: var(--text-link-color);
+}
+
+.attribution a:link {
+    color: var(--footer-text);
+}
+
+main {
+    display:flex;
+    padding-right: 30px;
+    border-right: 5px var(--bar-color);
+}
+
+aside {
+    display:flex;
+    justify-content: flex-start;
+    font-size: 200%;
+    color: var(--text-color);
+    margin: 2%;;
+    padding: 1%;
+    border-right: 5px solid var(--bar-color);
+    min-width: 200px;
+}
+
+#About-Me {
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+    border-right: 10px var(--bar-color);
+}
+
+main p {
+    display: flex;
+    justify-content: flex-end;
+    min-width: auto;
 }
 
 footer {
@@ -90,7 +155,16 @@ footer li:first-child {
 }
 
 @media screen and (max-width:920px) {
-    main {
+    header {
         flex-direction: column;
+    }
+    
+    section {
+        padding-right: 0;
+    }
+
+    aside {
+        width: 100%;
+        text-align: center;
     }
 }
