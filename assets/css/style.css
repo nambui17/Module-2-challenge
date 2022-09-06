@@ -20,7 +20,6 @@
 body {
     background-color: var(--backdrop);
     line-height: 1.5;
-    font-size: 16px;
 }
 
 header {
@@ -31,6 +30,7 @@ header {
     background: var(--header-color);
     border-bottom: 5px solid var(--bar-color);
     flex-wrap: wrap;
+    flex-direction: row;
 }
 
 h1 {
@@ -74,8 +74,6 @@ nav a:hover {
     font-weight: 900;
     padding-right: 60px;
     color: #82a3a1;
-    -webkit-text-stroke-width: 1.5px;
-    -webkit-text-stroke-color: var(--bar-color);
 }
 
 .attribution {
@@ -162,7 +160,7 @@ footer li:first-child {
     color: var(--footer-text);
 }
 
-@media screen and (max-width:920px) {
+@media screen and (max-width:998px) {
     header {
         flex-direction: column;
     }
