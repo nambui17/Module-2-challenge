@@ -19,8 +19,6 @@
 
 body {
     background-color: var(--backdrop);
-    display: flex;
-    flex-direction: column;
     line-height: 1.5;
     font-size: 16px;
 }
@@ -32,6 +30,7 @@ header {
     padding: 20px;
     background: var(--header-color);
     border-bottom: 5px solid var(--bar-color);
+    flex-wrap: wrap;
 }
 
 h1 {
@@ -67,7 +66,6 @@ nav a:hover {
     height: 400px;
     width: 100%;
     background-image: url("../images/Microstructures.jpg");
-    /*Image under creative commons license*/
     background-size:cover;
     background-position: center;
     justify-content: flex-end;
@@ -107,20 +105,23 @@ main {
     display:flex;
     padding-right: 30px;
     border-right: 5px var(--bar-color);
+    flex-wrap: wrap;
 }
 
 aside {
     display:flex;
     justify-content: flex-start;
     font-size: 200%;
+    padding: 0 1% 1% 0;
+    margin: 0 1.5% 1.5% 0;
     color: var(--text-color);
-    margin: 2%;;
-    padding: 1%;
     border-right: 5px solid var(--bar-color);
     min-width: 200px;
+    text-align: center;
+    flex-wrap: wrap;
 }
 
-#About-Me {
+.main-section {
     display: flex;
     justify-content: flex-start;
     text-align: center;
@@ -131,6 +132,13 @@ main p {
     display: flex;
     justify-content: flex-end;
     min-width: auto;
+    text-align: left;
+    flex-wrap:wrap;
+}
+
+section a p {
+    font-size: 12px;
+    font-style: none;
 }
 
 footer {
@@ -157,14 +165,5 @@ footer li:first-child {
 @media screen and (max-width:920px) {
     header {
         flex-direction: column;
-    }
-    
-    section {
-        padding-right: 0;
-    }
-
-    aside {
-        width: 100%;
-        text-align: center;
     }
 }
