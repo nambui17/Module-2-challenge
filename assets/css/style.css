@@ -20,6 +20,8 @@
 body {
     background-color: var(--backdrop);
     line-height: 1.5;
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -124,19 +126,51 @@ aside {
     justify-content: flex-start;
     text-align: center;
     border-right: 10px var(--bar-color);
+    padding-top: 2%;
 }
 
 main p {
-    display: flex;
-    justify-content: flex-end;
     min-width: auto;
     text-align: left;
     flex-wrap:wrap;
+    font-size: 14px;
+    font-style: none;
 }
 
-section a p {
-    font-size: 12px;
-    font-style: none;
+#cards {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3rem;
+    gap: 1.5rem;
+    justify-content: flex-start;
+    text-align: center;
+    border-right: 10px var(--bar-color);
+    padding-top: 2%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background: var(--backdrop);
+    color: #000000;
+    border-radius: 5px;
+    box-shadow: 3px 2px 14px rgba(#262631,0.4);
+    text-decoration:none;
+}
+
+.card:first-child {
+    flex: 1 1 120px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("../images/Sunset.jpg")
+}
+
+section aside span {
+    padding: 2%;
+    margin: 2.5%;
+    width: max-content;
+
 }
 
 footer {
