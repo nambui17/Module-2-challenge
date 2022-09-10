@@ -177,7 +177,7 @@ main p {
 #me {
     display:flex;
     justify-content: center;
-    border: 1px solid #ddd;
+    border: 3px solid var(--header-text);
     border-radius: 4px;
     padding: 5px;
     width: auto;
@@ -197,7 +197,7 @@ main a {
     background-position: center;
     justify-content: flex-start;
     align-items: flex-end;
-    height: 250px;
+    height: 350px;
     flex: 1 1 40%;
     transition: transform 200ms ease-in-out;
 }
